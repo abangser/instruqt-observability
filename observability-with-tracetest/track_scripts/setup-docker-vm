@@ -1,11 +1,22 @@
 #!/bin/bash
 set -euxo pipefail
 
-echo "Running track setup script on host docker-vm"
-
 # Wait for the Instruqt host bootstrap to finish
 until [ -f /opt/instruqt/bootstrap/host-bootstrap-completed ]
 do
     sleep 1
 done
+
+# Install key applications
+export DOCKER_VERSION=5:24.0.6~3-0~ubuntu-jammy
+
+## Install initial apps
+apt-get updatea && apt-get install -y docker-compose-plugin make vim
+
+# Run all applications (app, tracetest, jaeger, otel)
+cd /
+git clone https://github.com/kubeshop/pokeshop.git
+cd /pokeshop
+# sed -i 's///g' ./Makefile
+# make run
 

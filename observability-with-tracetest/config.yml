@@ -1,6 +1,7 @@
 version: "3"
 virtualmachines:
 - name: docker-vm
+  # image: ubuntu-os-cloud/ubuntu-2204-lts
   image: instruqt/docker-2010
   shell: /bin/bash
   machine_type: n1-standard-1
