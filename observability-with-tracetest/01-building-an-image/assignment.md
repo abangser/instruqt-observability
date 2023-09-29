@@ -16,13 +16,31 @@ notes:
     In this first challenge, you'll create a container image. Please wait while we
     boot a virtual machine for you.
 tabs:
+- title: DockerCompose
+  type: terminal
+  hostname: docker-vm
 - title: Terminal
   type: terminal
   hostname: docker-vm
 - title: Editor
   type: code
   hostname: docker-vm
-  path: /app
+  path: /pokeshop
+- title: TraceTest
+  type: service
+  hostname: docker-vm
+  path: /
+  port: 11633
+- title: Jaeger
+  type: service
+  hostname: docker-vm
+  path: /search
+  port: 16686
+- title: Pokeshop
+  type: service
+  hostname: docker-vm
+  path: /
+  port: 8081
 difficulty: basic
 timelimit: 600
 ---

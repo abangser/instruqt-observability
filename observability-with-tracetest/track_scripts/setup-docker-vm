@@ -8,15 +8,28 @@ do
 done
 
 # Install key applications
-export DOCKER_VERSION=5:24.0.6~3-0~ubuntu-jammy
 
 ## Install initial apps
-apt-get updatea && apt-get install -y docker-compose-plugin make vim
+apt-get update && apt-get install -y docker-compose-plugin make vim
 
 # Run all applications (app, tracetest, jaeger, otel)
 cd /
 git clone https://github.com/kubeshop/pokeshop.git
 cd /pokeshop
-# sed -i 's///g' ./Makefile
-# make run
+sed -i 's/ up/ up -d'/g Makefile
+cat <<EOT >> Makefile
+
+build: ## build all images related to run
+EOT
+echo -e "\tdocker compose -f docker-compose.yml -f ./docker-compose.stream.yml -f ./tracetest/docker-compose.yml build" >> Makefile
+
+cat <<EOT >> Makefile
+
+pull: ## pull all images related to run
+EOT
+echo -e "\tdocker compose -f docker-compose.yml -f ./docker-compose.stream.yml -f ./tracetest/docker-compose.yml pull" >> Makefile
+
+make build pull
+make run || true
+make run || true
 
