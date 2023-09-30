@@ -13,10 +13,6 @@ tabs:
   hostname: docker-vm
   path: /
   port: 8081
-- title: Editor
-  type: code
-  hostname: docker-vm
-  path: /pokeshop
 - title: Terminal
   type: terminal
   hostname: docker-vm
@@ -35,6 +31,10 @@ tabs:
   hostname: docker-vm
   path: /
   port: 11633
+- title: Editor
+  type: code
+  hostname: docker-vm
+  path: /pokeshop
 difficulty: basic
 timelimit: 600
 ---

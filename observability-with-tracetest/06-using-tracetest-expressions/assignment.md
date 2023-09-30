@@ -1,8 +1,8 @@
 ---
-slug: stretch-create-a-tracetest-suite
-id: azcz01qbcyxs
+slug: using-tracetest-expressions
+id: ihyd3rjzvevr
 type: challenge
-title: 'Stretch: Create a TraceTest suite'
+title: Using TraceTest Expressions
 teaser: A short description of the challenge.
 notes:
 - type: text
@@ -13,10 +13,6 @@ tabs:
   hostname: docker-vm
   path: /
   port: 8081
-- title: Editor
-  type: code
-  hostname: docker-vm
-  path: /pokeshop
 - title: Terminal
   type: terminal
   hostname: docker-vm

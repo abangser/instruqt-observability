@@ -16,6 +16,6 @@ apt-get update && apt-get install -y docker-compose-plugin make vim
 cd /
 git clone https://github.com/abangser/pokeshop.git
 cd /pokeshop
-# Running twice as it is flakey on first run
+# Running twice as queue tends to fail on the first run
 make run || true
 make run || true

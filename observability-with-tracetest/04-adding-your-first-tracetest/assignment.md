@@ -13,10 +13,6 @@ tabs:
   hostname: docker-vm
   path: /
   port: 8081
-- title: Editor
-  type: code
-  hostname: docker-vm
-  path: /pokeshop
 - title: Terminal
   type: terminal
   hostname: docker-vm
