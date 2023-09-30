@@ -1,6 +1,6 @@
 slug: observability-with-tracetest
 id: vbob25gpexhn
-title: observability with tracetest
+title: Observability with tracetest
 description: This template shows you how to use a Virtual Machine (VM). VMs can be
   used when you need more compute and memory or for running Docker containers.
 icon: https://cdn.instruqt.com/assets/templates/docker.png
@@ -13,4 +13,4 @@ lab_config:
   overlay: false
   width: 33
   position: right
-checksum: "13163185298014169083"
+checksum: "13601318513525137543"

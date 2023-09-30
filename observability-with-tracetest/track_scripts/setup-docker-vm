@@ -14,22 +14,8 @@ apt-get update && apt-get install -y docker-compose-plugin make vim
 
 # Run all applications (app, tracetest, jaeger, otel)
 cd /
-git clone https://github.com/kubeshop/pokeshop.git
+git clone https://github.com/abangser/pokeshop.git
 cd /pokeshop
-sed -i 's/ up/ up -d'/g Makefile
-cat <<EOT >> Makefile
-
-build: ## build all images related to run
-EOT
-echo -e "\tdocker compose -f docker-compose.yml -f ./docker-compose.stream.yml -f ./tracetest/docker-compose.yml build" >> Makefile
-
-cat <<EOT >> Makefile
-
-pull: ## pull all images related to run
-EOT
-echo -e "\tdocker compose -f docker-compose.yml -f ./docker-compose.stream.yml -f ./tracetest/docker-compose.yml pull" >> Makefile
-
-make build pull
+# Running twice as it is flakey on first run
 make run || true
 make run || true
-
