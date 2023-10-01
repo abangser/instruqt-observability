@@ -1,16 +1,17 @@
 slug: observability-with-tracetest
 id: vbob25gpexhn
-title: Observability with tracetest
-description: This template shows you how to use a Virtual Machine (VM). VMs can be
-  used when you need more compute and memory or for running Docker containers.
-icon: https://cdn.instruqt.com/assets/templates/docker.png
+title: Observability with TraceTest
+description: This is a half day tutorial built for HUSTEF conference. If you are finding
+  this and are not a part of this event, please reach out to the instructor via email
+  for more details and support (abby@paintedwavelimited.com).
+icon: https://opensearch.org/assets/media/partners/tracetest/tracetest-logo.png
 tags: []
 owner: syntasso
 developers:
 - abby@syntasso.io
-timelimit: 5400
+timelimit: 14400
 lab_config:
   overlay: false
   width: 33
   position: right
-checksum: "7506727563736707989"
+checksum: "2900484856509258752"
