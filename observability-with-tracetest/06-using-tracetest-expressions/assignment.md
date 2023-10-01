@@ -37,7 +37,7 @@ tabs:
   path: /
   port: 11633
 difficulty: basic
-timelimit: 600
+timelimit: 2100
 ---
 
 Can't be blank!

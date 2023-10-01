@@ -32,7 +32,7 @@ tabs:
   path: /search
   port: 16686
 difficulty: basic
-timelimit: 600
+timelimit: 2100
 ---
 
 👀 I spy a new tab!

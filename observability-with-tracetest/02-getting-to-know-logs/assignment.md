@@ -30,7 +30,7 @@ tabs:
   path: /
   port: 9999
 difficulty: basic
-timelimit: 600
+timelimit: 2100
 ---
 
 👾 Pokeshop, a way to collect them all!
