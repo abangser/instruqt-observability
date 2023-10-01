@@ -6,7 +6,10 @@ title: 'Stretch: Create a TraceTest suite'
 teaser: A short description of the challenge.
 notes:
 - type: text
-  contents: Replace this text with your own text
+  contents: |
+    # Creating a test suite
+
+    So far you have focused on writing test cases. But sometimes these tests need to be built up from a larger workflow. TraceTest can do that too!
 tabs:
 - title: Pokeshop Webapp
   type: service
@@ -35,5 +38,27 @@ difficulty: basic
 timelimit: 2100
 ---
 
-Can't be blank!
-=====================
+🚰 Creating flow
+================
+
+So far you have created individual test cases, but you may be wondering, what happens when a use case requires multiple steps. For example, a user needs to login before authorising to another endpoint? Or in the case of Pokeshop, you want to create a Pokemon before looking it up again in the list.
+
+The way to do this in TraceTest is to create a suite where the triggers run in order.
+
+🧑🏽‍🎓 First you can study the existing suite
+=========================================
+
+The TraceTest server actually already has an example of this visible.
+
+Navigate to the `Test Suite` tab from the home page to see a test suite called `Running all test`.
+
+If you open this up you will see a number of tests run in order. Explore around here a bit to see how it all works.
+
+For example, can you add one of your new tests to this suite? Choose the right location for it to work right!
+
+👷‍♀️ Ok now go to work
+====================
+
+Try to make a test suite where there are two tests that need to run in order. But make it so that the second test depends on a specific (and dynamic) value from the result of the first test.
+
+> 💡 This may require variable sets and/or outputs which can both be found in the TraceTest documentation!
