@@ -1,13 +1,13 @@
 ---
-slug: extending-tracing-context
+slug: writing-your-first-tracetest-trigger
 id: 84re6uvnd0rr
 type: challenge
-title: Extending tracing context
+title: Writing your first TraceTest trigger
 teaser: A short description of the challenge.
 notes:
 - type: text
   contents: |
-    # Writing triggers to prepare scenarios to validate
+    # Writing triggers to prepare scenarios for validation
 
     While TraceTest is unique to other testing tools because it can work with pre-existing data, that does not stop it from doing a more tradition trigger of a scenario and then validating the outcome.
 

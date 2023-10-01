@@ -1,8 +1,8 @@
 ---
-slug: adding-your-first-tracetest
+slug: adding-your-first-tracetest-assertion
 id: 01onreatn99d
 type: challenge
-title: Adding your first TraceTest
+title: Adding your first TraceTest assertion
 teaser: A short description of the challenge.
 notes:
 - type: text
