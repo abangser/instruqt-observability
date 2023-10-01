@@ -79,7 +79,7 @@ Where would you choose to use this type of testing? Where would you _not_ choose
 
 What other tools does TraceTest remind you of? Can you imagine using such a tool without major learning curves?
 
-🚂 Let's keep this train
-========================
+🚂 Let's keep this train movin'!
+================================
 
 The next two sections start to introduce some of the advanced features of TraceTest which can hopefully help unlock some opportunities for you.

@@ -48,7 +48,7 @@ In this section you again have a new tab added to the right hand side. It is cal
 
 This tab is a running [TraceTest](https://tracetest.io/) instance. TraceTest is an OSS tool that allows you to write validations against trace data.
 
-TraceTest can act independently as a test runner (i.e. actually executing the user flow test case) and a validator (i.e. making assertions against the data collected). 
+TraceTest can act independently as a test runner (i.e. actually executing the user flow test case) and a validator (i.e. making assertions against the data collected).
 
 While TraceTest can validate against externally created traces, today we will use TraceTest to write our user flow _and_ do the validation of the resulting trace data.
 
@@ -64,7 +64,7 @@ Try and complete the following challenges to understand how it works:
 🆕 Writing your first test
 ===========================
 
-On the introductory slide it was mentioned that TraceTest can be a runner and a validator, but can also separate and only do validation on previously created data. 
+On the introductory slide it was mentioned that TraceTest can be a runner and a validator, but can also separate and only do validation on previously created data.
 
 Since the two concepts can be separated in TraceTest we are going to focus first on how to write `tests` by creating a test from an existing trace.
 
@@ -86,7 +86,7 @@ In the top right corner of the TraceTest home page, select `Create`. This will p
 
 Provide a name and description of your choosing and then hit `Next`.
 
-Name your variable name the same as what was in the JSON so `traceID` and 
+Name your variable name the same as what was in the JSON so `traceID` and
 
 > 🐛 Watch out! Small bug here here you need to actually `x` out of the front test modal to get to the variable modal!
 
