@@ -1,0 +1,4 @@
+- title: Editor
+  type: code
+  hostname: docker-vm
+  path: /pokeshop

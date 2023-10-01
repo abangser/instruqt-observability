@@ -7,7 +7,7 @@ teaser: A short description of the challenge.
 notes:
 - type: text
   contents: |
-    # Using trace data for good (and maintaining it!)
+    # Creating a test to validate (and maintain) your trace data
 
     Given we think this trace data gives a great view of the entire system, it seems reasonable to want to use this to also _validate_ the entire system!
 

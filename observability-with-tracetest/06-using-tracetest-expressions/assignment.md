@@ -6,7 +6,12 @@ title: Using TraceTest Expressions
 teaser: A short description of the challenge.
 notes:
 - type: text
-  contents: Replace this text with your own text
+  contents: |
+    # Using expressions for more powerful test cases
+
+    One of the concerns with the tests so far is how tied to the single test trigger they are. This tight coupling can create fragile tests that we don't need any more of.
+
+    In this section we will look at how to write more matcher based selectors and assertions to make your tests more flexible.
 tabs:
 - title: Pokeshop Webapp
   type: service
