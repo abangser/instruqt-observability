@@ -61,7 +61,7 @@ You can see the full architecture [here](https://docs.tracetest.io/live-examples
 
 If you needed to investigate what is happening in this application you may need to use the logs in one or more services.
 
-To view logs you can go to the new tab called `🔗 Logs` which is a service that gives access to logs of all running Docker containers.
+To view logs you can go to the new tab called `🔗 Logs` which is a [Dozzle](https://dozzle.dev/) service that gives access to logs of all running Docker containers.
 
 Once in the Logs tab, go ahead and explore to try and find your own actions in the web app displayed in logs.
 

@@ -30,6 +30,7 @@ This first section is an introduction to your workshop environment here in Instr
 
 Instruqt is a completely browser based environment where you will be able to explore and experiment in a safe way without needing to change your personal computers in any way.
 
+To see the next section of text, click on the title `🗂 Other views` below and it will fold open 👐
 
 🗂 Other views
 ==============
@@ -52,6 +53,8 @@ You will notice that the Terminal view is a real live command line. So as you ca
 ====================
 
 Sometimes you will need instructions, other times you will want more space to work. If you ever want to minimize these instructions you can click the `>` icon and then use the `<` icon to re-open them when you need them again.
+
+As you have opened a few sets of instructions this window may need a bit of scrolling. You can make space here by closing a sub section of text by clicking on its title.
 
 
 ⏭ Moving on up
