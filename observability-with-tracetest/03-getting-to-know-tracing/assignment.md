@@ -6,7 +6,12 @@ title: Getting to know tracing
 teaser: A short description of the challenge.
 notes:
 - type: text
-  contents: Replace this text with your own text
+  contents: |
+    # Introducing traces
+
+    After some time to explore logs, you may have a few questions about how to understand the complete architecture using only telemetry data.
+
+    This section will introduce traces as a way to understand how the pieces of the architecture interact with each other.
 tabs:
 - title: Pokeshop Webapp
   type: service

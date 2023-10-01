@@ -7,7 +7,7 @@ teaser: Explore our shared webapp and how logs can provide insights
 notes:
 - type: text
   contents: |
-    # Exploring Pokeshop
+    # Exploring Pokeshop through logs
 
     Pokeshop is a web app and API that allows you to collect your favourite
     Pokemon. You can do this with either importing existing Pokemon or creating
