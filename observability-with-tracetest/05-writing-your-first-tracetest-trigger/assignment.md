@@ -79,6 +79,11 @@ Once you know the request worked, it is time to review the resulting trace and t
 
 Head over to the `Test` tab where the trace should be loading up (this takes a few seconds). Once loaded, you can explore this trace just like you would any other and start to add test validations to the execution.
 
+🔂 Create a different HTTP test
+===============================
+
+Now that you have the hang of it, try another!
+
 🗣 Let's chat
 =============
 
