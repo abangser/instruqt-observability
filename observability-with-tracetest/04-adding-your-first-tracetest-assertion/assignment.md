@@ -134,6 +134,8 @@ Once within the attributes tab you can actually select the three dots next to an
 
 Try making a few assertions and seeing what attributes you would want to assert on.
 
+> 💡 If you want to learn more, you can check out the TraceTest docs at: https://docs.tracetest.io/
+
 🗣 Let's chat
 =============
 
