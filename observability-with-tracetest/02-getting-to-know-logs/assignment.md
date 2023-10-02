@@ -43,15 +43,41 @@ The website is pretty simple in that it only has a handful of actions users may 
 1. Import an existing Pokemon
 1. Remove a Pokemon
 
-Have a look around so that you can get to know the user experience of this website.
+We are going to import an existing Pokemon and create a new Pokemon to exercise the system a bit.
 
-Once you are content with the features from the UI, it is time to investigate the architecture.
 
+📥 Importing an existing Pokemon
+================================
+
+To start, we will do the most simple case. Try to import a correct Pokemon.
+
+To do this, click the blue import button and put in a valid Pokemon ID number. Then press OK and wait about 2 or 3 seconds for the new Pokemon to be added to the UI.
+
+> 💡 Hint! As we go through this we will need to import some new Pokemon. There are 1,010 different Pokemon so you can pick a random number within that range, or you can use the Pokedex to look up a specific one!
+>
+> https://www.pokemon.com/us/pokedex
+
+
+👹 Next, create a new Pokemon
+=============================
+
+Next let's go one step further an see how to create a new one.
+
+Select the blue `Add Pokemon` button and fill in all the fields with valid data. After pressing `OK` you will again see the new pokemon land on the home page after a few seconds 🎉
+
+🧪 OK testers, go be testers!
+=============================
+
+If you were kind enough not to immediate try for an edge case, I appreciate you. But now you are set free. Have fun, explore, get to know the behaviours.
+
+✨**_But_**✨ as you do, please continue on to look at the architecture and logs outputs so that your exploring can be in reference to learning more about the inner workings of the application too!
 
 🏛 Pokeshop architecture
 ========================
 
-What seems simple at first can often have a lot of complexity behind the scenes. With the user experience you may expect to see a UI, API, and Database. But did you know it also has a queuing system to manage streaming requests?
+What seems simple at first can often have a lot of complexity behind the scenes.
+
+With the user experience you may expect to see a UI, API, and Database. But did you know it also has a queuing system to manage streaming requests?
 
 You can see the full architecture [here](https://docs.tracetest.io/live-examples/pokeshop/overview/#system-architecture).
 
@@ -71,9 +97,9 @@ For example, can you import a Pokemon and see how it flows through the architect
 
 Spend a few minutes on this before finishing up this section.
 
-🏁 We may never be done, but let's move on
+🗣 Let's chat
 ==========================================
 
-You could likely spend a whole half day working on just understanding the logs. That is partly because they are interesting, but also partly because logs make it hard to answer the question "how did this request get answered by my system?".
-
-With that in mind, click `Next` and you will get a chance to look at how tracing can help with these types of questions.
+How would you like to run automated tests against this application?
+What was your experience reading logs?
+What else do you wish you could learn from the logs?
