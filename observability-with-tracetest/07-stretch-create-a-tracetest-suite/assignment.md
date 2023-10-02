@@ -38,6 +38,13 @@ difficulty: basic
 timelimit: 2100
 ---
 
+🦪 The world is your oyster
+===========================
+
+At this stage you can do anything you fancy. If you want to try making a suite, feel free to review the documents below. But this will be self paced.
+
+Feel free to work together and/or ask questions to the room as you go!
+
 🚰 Creating flow
 ================
 

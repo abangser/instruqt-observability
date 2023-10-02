@@ -68,11 +68,26 @@ Spans can be particularly useful for reducing duplicated test cases.
 
 Try and use the built in helpers to select current and all spans, but also try and work with the expression to select only a few of the spans that you may want to validate against.
 
-🎬 This is the end, unless you want a big challenge
+👷🏽‍♀️ Putting these to use
+=======================
+
+So remember that test you did on a trace that succeeded at importing a Pokemon?
+
+Well what would happen if you selected a trace that did _not_ succeed?
+
+Did the things you expect to fail fail? If not, can you use selectors or expression to write a more powerful (and flexible) test?
+
+🗣 Let's chat
+=============
+
+1. Can you think of a use case for tracing and TraceTest in your organisation?
+1. How would thinking about testing in this way chance your team's perspective?
+
+🎬 This is the end of the guided tour
 ===================================================
 
 Like any tool, there is a lot to learn. With the topics we have covered so far you can easily spend the rest of the day or even week honing your understanding and skills.
 
 Thinking about logs, traces, and testing traces are big topics.
 
-But if you really want to cram it all in, go ahead to the next section where we introduce test suites with data passing between steps ✨
+Go ahead to the next section where you will be free to explore anything you like and maybe you could even try creating a test suite with data passing between steps ✨

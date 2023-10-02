@@ -6,10 +6,6 @@
 # script. If the exit code is not 0, the script fails. 
 #
 
-if test -f "~/trace-for-understanding"; then
-    echo "Congrats! Moving on to the next step"
-    exit 0
-fi
+test -f ~/trace-for-understanding && exit 0
 
-echo "Please wait to continue with the group. In the mean time, you are welcome to keep exploring!"
 exit 99

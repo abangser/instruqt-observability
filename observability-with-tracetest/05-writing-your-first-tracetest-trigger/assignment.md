@@ -45,15 +45,22 @@ timelimit: 2100
 
 It is time to create another test. This time using a different trigger type, specifically the `HTTP Request` type.
 
-Once you select this type and click `Next` you can fill in a name and description of your choosing.
+Once you select this type and click `Next` you can select the `Choose Example v` text to select from a few pre-filled templates. You can select import to mimic the last test we did against the existing trace.
 
-The next page will require a HTTP verb (e.g. `GET` or `POST`), a URL and (if applicable) a Request body.
+💡 All the template does is fill in the text fields. All field values will be provided in these instructions if you prefer to type them yourself.
 
-You should use `api:8082` as the start of your URL, but will then need to add the specific path.
+If you chose to use a template, you can still change any of the fields, so feel free to customise the name or description to your liking. Once satisfied, click `Next`.
 
-Depending how comfortable you are with APIs, you may want to play with different URLs and types. But the simplest option is to keep the verb as `GET` and make the path `/pokemon`. This is the list Pokemon API endpoint and does not require an request bodies making it a fairly simple one to get started with.
+This page should look familiar if you have used any other visual UIs for API testing. If not, that is OK because we will walk through it.
+
+There are three key fields you will need to set:
+1. **HTTP verb**: This is a drop down list and should be set to `POST` for import or add, or `GET` for list
+1. **URL**: The base URL is `http://api:8081/pokemon` but you may need an additional path if you want to test import (`import`) or list (`?take=20&skip=0`). The full API docs can be found [here](https://github.com/kubeshop/pokeshop/blob/master/docs/overview.md).
+1. **Request body**: If you are listing you will want to set this to None. But for both import and add you will need to set it to `JSON` and provide the corresponding values. For import the format is `{"id": 123}` and for add it is `{"name": "foo", "type": "normal", "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png", isFeatured: false}`.
 
 Once you are happy with your initial trigger, go ahead and click `Create and Run`. This will immediate close the modal and run the test.
+
+> 💡 Don't stress too much about this. We will be validating it and can edit as needed!
 
 🧐 Check if the request worked
 ==============================
@@ -70,16 +77,12 @@ If not, you are able to edit the URL and other parameters on the left hand side 
 
 Once you know the request worked, it is time to review the resulting trace and then add some validations.
 
-Head over to the `Test` tab where the trace should be loading up (this takes a few seconds!). Once loaded, you can explore this trace just like you would any other and start to add test validations to the execution.
+Head over to the `Test` tab where the trace should be loading up (this takes a few seconds). Once loaded, you can explore this trace just like you would any other and start to add test validations to the execution.
 
-⏸ Pause here and have a think
-==============================
+🗣 Let's chat
+=============
 
-Where would you choose to use this type of testing? Where would you _not_ choose to use it? What are your hopes (and concerns) over Trace based testing?
-
-What other tools does TraceTest remind you of? Can you imagine using such a tool without major learning curves?
-
-🚂 Let's keep this train movin'!
-================================
-
-The next two sections start to introduce some of the advanced features of TraceTest which can hopefully help unlock some opportunities for you.
+1. Where would you choose to use this type of testing? Where would you _not_ choose to use it?
+1. What are your hopes (and concerns) over Trace based testing?
+1. What other tools does TraceTest remind you of?
+1. Can you imagine using such a tool without major learning curves?

@@ -57,9 +57,16 @@ While TraceTest can validate against externally created traces, today we will us
 
 This instance of TraceTest actually already has some data in it which can give you a sense of how it works.
 
-Try and complete the following challenges to understand how it works:
-1. Change one of the tests so that it will fail. Then re-run the test and see if fail.
-1. Find the TraceID from one of the tests and investigate the same trace in Jaeger vs in TraceTest
+There are three core pages:
+`Tests`: This is the "home" page and lists all current tests. We will be here for most of today
+`Test Suites`: This is where you can group together tests into a suite. This is powerful to create a CI suite, but also to create dependent flows like you might do in another API testing tool such as Postman.
+`Variable Sets`: This is where you can create different environments / setups for your tests. For example, you can create a set of variables that are valid for dev and a different set for production so the same tests can be run in both.
+
+If you want to run a test that already exists, you can just click the run button on the right (go ahead, hit that button! 🫵).
+
+This opens the second most important view for us today. The detailed test view.
+
+This view also has a number of tabs, but also offers to show you around, so start there and follow that tour.
 
 🆕 Writing your first test
 ===========================
@@ -68,21 +75,25 @@ On the introductory slide it was mentioned that TraceTest can be a runner and a 
 
 Since the two concepts can be separated in TraceTest we are going to focus first on how to write `tests` by creating a test from an existing trace.
 
-🕵🏽‍♂️ Find your self a trace to test
-=================================
+🕵🏽‍♂️ Find a trace to test
+=======================
 
 To test a specific trace, you will need to first go get a `traceID` from Jaeger on the `🔗 Traces` tab.
 
-Go ahead an search for a trace that depicts something interesting to you. When you find one, select it from the list so that you are in the detailed view.
+Go ahead an search for a trace where you successfully imported a Pokemon.
 
-This detailed view is called the `Trace Timeline` view. You can change the view from the rop right corner where there is a drop down button. Select this button and click on `Trace JSON`. This will open a new tab but give you access to the complete `traceID`.
+Once you find your trace, click on it to view the details.
 
-Copy this `traceID` field and return to the `🔗 Testing` Instruqt tab.
+The default view is called the `Trace Timeline` view. You can change the view from the rop right corner where there is a drop down button. Select this button and click on `Trace JSON`. This will open a new tab but give you access to the complete `traceID`.
+
+Copy this `traceID` field and return to the Instruqt tab in your browser and then navigate to the `🔗 Testing` tab.
 
 🧪 Create a TraceTest
 =====================
 
-In the top right corner of the TraceTest home page, select `Create`. This will present you with a number of options including `TraceID`. Select this option.
+Return to the "home" page by clicking on the `TraceTest` logo in the top right.
+
+Once on the home page, you can select `Create`. This will present you with a number of options including `TraceID`. Select this option.
 
 Provide a name and description of your choosing and then hit `Next`.
 
@@ -96,7 +107,7 @@ Then hit `Run`.
 
 This should bring up the runner page. If you navigate to the `Trace` tab you should be able to compare this to the trace you had selected in Jaeger!
 
-But this hasn't validated anything yet so go on to the next header...
+But this hasn't validated anything yet...
 
 
 🦾 First, try a template test
@@ -123,7 +134,9 @@ Once within the attributes tab you can actually select the three dots next to an
 
 Try making a few assertions and seeing what attributes you would want to assert on.
 
-✅ Well done on your first test!
-================================
+🗣 Let's chat
+=============
 
-While this is exciting, it is likely more effective to see how TraceTest can work with or even replace some of your API or End-to-End testing by working with triggers. Go ahead and move onto the next section to check that out!
+1. When might you use testing against pre-existing traces?
+1. What do you think about the template tests, do you agree these are commonly valuable assertions?
+1. Are there any other assertions you are thinking of that you aren't sure how to complete in this UI?

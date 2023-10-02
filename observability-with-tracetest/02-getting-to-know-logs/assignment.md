@@ -98,8 +98,8 @@ For example, can you import a Pokemon and see how it flows through the architect
 Spend a few minutes on this before finishing up this section.
 
 🗣 Let's chat
-==========================================
+=============
 
-How would you like to run automated tests against this application?
-What was your experience reading logs?
-What else do you wish you could learn from the logs?
+1. How would you like to run automated tests against this application?
+1. What was your experience reading logs?
+1. What else do you wish you could learn from the logs?
