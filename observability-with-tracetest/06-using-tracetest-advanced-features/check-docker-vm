@@ -8,4 +8,5 @@
 
 test -f ~/getting-creative && exit 0
 
-exit 99
+# allowing no check for continued use outside the instructor led course
+exit 0
