@@ -17,5 +17,5 @@ cd /
 git clone https://github.com/kubeshop/pokeshop.git
 cd /pokeshop
 # Running twice as queue tends to fail on the first run
-make run || true
-make run || true
+DETACHED=true make run || true
+DETACHED=true make run || true
