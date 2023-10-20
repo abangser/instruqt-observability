@@ -9,9 +9,9 @@ tags: []
 owner: syntasso
 developers:
 - abby@syntasso.io
-timelimit: 14400
+timelimit: 1200
 lab_config:
   overlay: false
   width: 33
   position: right
-checksum: "11916714336048973118"
+checksum: "14845086701576810131"
