@@ -1,0 +1,74 @@
+version: 2.1
+
+parameters:
+  changed-dirs:
+    type: string
+    default: '["ske-tfstate-finder", "ske-backstage-generator"]'
+
+executors:
+  machine-medium:
+    machine:
+      image: ubuntu-2204:2024.01.2
+      docker_layer_caching: true
+    working_directory: ~/repo
+    resource_class: medium`
+
+jobs:
+  clone:
+    executor: machine-medium
+    steps:
+      - checkout
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  unit-test:
+    executor: machine-medium
+    parameters:
+      changed-dir:
+        type: string
+    steps:
+      - run:
+          name: Unit Tests
+          command: |
+            echo << parameters.changed-dir >>
+
+  system-test:
+    executor: machine-medium
+    parameters:
+      changed-dir:
+        type: string
+    steps:
+      - run:
+          name: System Tests
+          command: |
+            echo << parameters.changed-dir >>
+
+  update-release-pr:
+    executor: machine-medium
+    steps:
+      - run:
+          name: Create pending releases
+          command: |
+            echo hello
+
+workflows:
+  run-ci:
+    jobs:
+      - clone:
+          filters:
+            branches:
+              ignore: release-please--branches--main--components--*
+      - unit-test:
+          requires: [clone]
+          matrix:
+            parameters:
+              changed-dir: ["ske-tfstate-finder", "ske-backstage-generator"]
+      - system-test:
+          requires: [clone]
+          matrix:
+            parameters:
+              changed-dir: ["ske-tfstate-finder", "ske-backstage-generator"]
+      - update-release-pr:
+          requires: [unit-test, system-test]
