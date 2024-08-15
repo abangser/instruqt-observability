@@ -1,15 +1,12 @@
 version: 2.1
-
 matrix: &matrix
   matrix:
     parameters:
       changed-dir: ["ske-tfstate-finder", "ske-backstage-generator"]
-
 parameters:
   changed-dirs:
     type: string
     default: '["ske-tfstate-finder", "ske-backstage-generator"]'
-
 executors:
   machine-medium:
     machine:
@@ -17,7 +14,6 @@ executors:
       docker_layer_caching: true
     working_directory: ~/repo
     resource_class: medium
-
 jobs:
   clone:
     executor: machine-medium
@@ -27,7 +23,6 @@ jobs:
           root: .
           paths:
             - .
-
   unit-test:
     executor: machine-medium
     parameters:
@@ -38,7 +33,6 @@ jobs:
           name: Unit Tests
           command: |
             echo << parameters.changed-dir >>
-
   system-test:
     executor: machine-medium
     parameters:
@@ -49,7 +43,6 @@ jobs:
           name: System Tests
           command: |
             echo << parameters.changed-dir >>
-
   update-release-pr:
     executor: machine-medium
     steps:
@@ -57,7 +50,6 @@ jobs:
           name: Create pending releases
           command: |
             echo hello
-
 workflows:
   run-ci:
     jobs:
@@ -67,9 +59,9 @@ workflows:
               ignore: release-please--branches--main--components--*
       - unit-test:
           requires: [clone]
-          <<: *matrix
+          !!merge <<: *matrix
       - system-test:
           requires: [clone]
-          <<: *matrix
+          !!merge <<: *matrix
       - update-release-pr:
           requires: [unit-test, system-test]
